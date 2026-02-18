@@ -582,6 +582,12 @@ ul {
     pointer-events: none;
     transition: all 0.4s ease;
     transform: rotate(-15deg);
+    z-index: 0;
+}
+
+.problem-content-wrap {
+    position: relative;
+    z-index: 1;
 }
 
 .problem-card:hover .card-bg-icon {
@@ -1084,6 +1090,33 @@ ul {
     text-align: center;
     color: var(--text-gray);
     font-size: 0.9rem;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.footer-contact a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+    color: var(--accent);
+}
+
+.footer-contact .separator {
+    color: var(--border);
 }
 
 /* Responsive */
