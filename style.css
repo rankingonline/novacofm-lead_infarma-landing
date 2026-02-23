@@ -1149,19 +1149,71 @@ ul {
 }
 
 @media (max-width: 600px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
     .header-content {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
-        gap: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .logo-container img {
+        height: 35px;
     }
 
     .contact-info {
-        width: 100%;
+        width: auto;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-item {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 0;
         justify-content: center;
+        background: var(--primary-50);
+    }
+
+    .contact-item span {
+        display: none;
+    }
+
+    .contact-item i {
+        margin: 0;
     }
 
     .hero-section {
-        padding: var(--spacing-md) 0;
+        padding: 1.5rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .benefits-list {
+        margin-bottom: 1.5rem;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .benefit-item {
+        font-size: 0.95rem;
     }
 
     .form-card {
