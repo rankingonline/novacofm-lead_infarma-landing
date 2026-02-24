@@ -242,6 +242,103 @@ ul {
     }
 }
 
+/* Selection Benefits Section */
+.selection-benefits {
+    padding: 0 0 var(--spacing-lg) 0;
+    background-color: var(--bg-white);
+}
+
+.benefits-wrapper {
+    background: var(--bg-light);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: var(--shadow-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.benefits-intro {
+    font-size: 1.5rem;
+    color: var(--primary);
+    line-height: 1.4;
+}
+
+.benefits-intro strong {
+    color: var(--accent-700);
+}
+
+.benefits-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--accent);
+}
+
+.benefits-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.advanced-benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.advanced-benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.4;
+}
+
+.advanced-benefits-list .icon-box {
+    background: var(--primary-50);
+    color: var(--primary);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.advanced-benefits-list .icon-box i {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 968px) {
+    .benefits-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .benefits-intro {
+        text-align: center;
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .benefits-content {
+        padding: 1.5rem;
+    }
+
+    .advanced-benefits-list li {
+        font-size: 0.95rem;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     padding: var(--spacing-lg) 0;
@@ -290,13 +387,13 @@ ul {
 
 .hero-text h1 {
     font-family: var(--font-title);
-    font-size: 3.5rem;
-    line-height: 1.1;
+    font-size: 2.5rem;
+    line-height: 1.3;
     font-weight: 700;
     color: white;
     /* Changed specifically for dark bg */
     margin-bottom: var(--spacing-md);
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
 }
 
 .hero-text p {
